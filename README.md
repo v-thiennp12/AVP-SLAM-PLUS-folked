@@ -13,6 +13,10 @@ AVP-SLAM-PLUS is an implementation of AVP-SLAM and some new contributions. Perfo
 <h5 align="center">localization</h5>
 </p>
                   
+** catkin-make :                   
+add_compile_options(-std=c++14) >> add to CMakeLists at src
+set(CMAKE_CXX_FLAGS "-std=c++14") >> modify in CMakeLists at avp-slam-plus
+
 AVP-SLAM-PLUS contain a simple implementation of [AVP-SLAM: Semantic Visual Mapping and Localization for Autonomous Vehicles in the Parking Lot(IROS 2020)](https://arxiv.org/abs/2007.01813) and some new contributions.
 
 The new contribustions are as follows: Firstly,the system provide two camera style mode which are multi RGB cameras mode and multi RGBD cameras mode; Secondly,the system provide two registration mode which are ICP mode and NDT mode. Lastly,the system provide mapping mode and localization mode, that means you can not only do SLAM,but also do localization in a prior map.
